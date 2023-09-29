@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Start BrainBox</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the BrainBox</h1>
+        <p>Please enter your details to start playing.</p>
+        <form id="userDetailsForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+            <br>
+            <button type="button" id="startGameButton">Start Game</button>
+        </form>
+        <div id="gameContainer" class="hidden">
+            <!-- Game content goes here -->
+            <p>Game is loading...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
