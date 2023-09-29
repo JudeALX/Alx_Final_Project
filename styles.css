@@ -1,0 +1,99 @@
+/* CSS styles for Paperboy game UI */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    background-image: url("Image Folder/123.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+    margin-bottom: 20px;
+}
+#question-container {
+    display: none; /* Initially hide question container */
+}
+
+#question {
+    font-size: 24px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.options button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.options button:hover {
+    background-color: #0056b3;
+}
+
+#score-container {
+    display: none; /* Initially hide result container */
+}
+
+#score-message {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #1cb026;
+}
+
+#next-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#next-button:hover {
+    background-color: #0056b3;
+}
+
+.container h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Adjust layout for small screens */
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
